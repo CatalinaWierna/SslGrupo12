@@ -1,9 +1,10 @@
 #include "tabla.h"
-#include <stdio.h>
 
-int main (){
-    int inicio;
-    int fin;
-    scanf ("%i %i",&inicio,&fin);
-    generarTabla (inicio, fin);
+int main (int argc, char** argv){
+    if(argc<=3){
+    generarTabla (argv[1], argv[2]);
+    }
+    else {
+    generarTablaConIncremento (argv[1], argv[2], argv[3]);
+    }
 }

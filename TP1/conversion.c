@@ -1,5 +1,5 @@
 #include"conversion.h"
 
-int convertir (int valorAconvertir){
+float convertir (float valorAconvertir){
     return valorAconvertir*1.852;
 }
